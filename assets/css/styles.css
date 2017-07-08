@@ -1,0 +1,208 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url("../fonts/Ubuntu-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url("../fonts/Ubuntu-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url("../fonts/Ubuntu-Bold.ttf") format('truetype');
+}
+
+body {
+  font-family: "Ubuntu-Regular";
+  color: #333;
+  background-color: #f5f5f5;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Ubuntu-Bold";
+}
+
+.profile-url {
+  font-family: "Ubuntu-Bold";
+}
+
+h4 {
+  font-family: "Ubuntu-Medium";
+  animation: hue-rotate 3s linear infinite;
+}
+
+.block {
+  /* border: 1px dashed #fff; */
+  text-align: center;
+  position: relative;
+
+  max-width: 225px;
+  margin: auto;
+
+  border-radius: 3px;
+
+  margin-bottom: 20px;
+
+  padding: 15px;
+}
+
+.info {
+  position: absolute;
+  top: 20px;
+  left: 0px;  
+  padding: 2px 5px;
+  font-family: "Ubuntu-Bold";
+}
+
+.plat {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  padding: 2px 5px;
+  font-family: "Ubuntu-Bold";
+  background-color: rgba(255,215,0, 0.6);
+}
+
+.plat-2 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  padding: 0px 5px;
+  font-size: 17px;
+  font-family: "Ubuntu-Bold";
+  background-color: rgba(255,215,0, 0.6);
+}
+
+.app {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  padding: 0px 5px;
+  font-size: 17px;
+  font-family: "Ubuntu-Bold";
+  background-color: rgba(191,0,254, 0.3);
+}
+
+.finished {
+  background-color: rgba(45, 255, 123, 0.6);
+}
+
+.unfinished {
+  background-color: rgba(255, 127, 80, 0.6);
+}
+
+.in-process {
+  background-color: rgba(0, 191, 255, 0.6);
+}
+
+img {  
+  max-width: 92px;
+  max-height: 92px;
+}
+ 
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+a {
+  color: #333;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+a:hover p, a:active p, a:focus p {
+  text-decoration: none;
+  color: #333;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  border-top: 2px solid #3674ad;
+  width: 75px;
+
+  animation: hue-rotate 5s linear infinite;
+}
+
+.bio {
+  font-family: "Ubuntu-Bold";
+  font-size: 18px;
+  color: #db5945;
+  animation: hue-rotate 5s linear infinite;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+#return-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: rgba(125, 125, 125, 0.7);
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /* border: 1px solid #455a64; */
+  
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 12px;
+  top: 10px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgba(125, 125, 125, 0.9);
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  #return-to-top {
+    right: 25px;    
+  }
+}
