@@ -1,1 +1,3 @@
-## website - qu4k3.com
+## Personal page, showing my projects and works :)
+
+by Paul Guillamon
