@@ -14,8 +14,9 @@ $(function(){
       }, 500);
   });
 
+});
 
-  // ===== Toggle play/pause =====
+// ===== Toggle play/pause =====
   $("#audio-play-pause").click( function (){
     if( $("#audio").paused ) {
         $("#audio").play();
@@ -28,5 +29,18 @@ $(function(){
     }
   });
 
+function toggleNav() {
 
-});
+  var x = document.getElementById('videoNav');
+  var y = document.getElementById('btnNav');
+
+    if (x.style.width === '280px') {
+        x.style.width = '0px';
+        y.style.left = '0px';
+        y.innerHTML='&#9776;';
+    } else {
+        x.style.width = '280px';
+        y.style.left = '280px';
+        y.innerHTML='&#9932;';
+    }
+}

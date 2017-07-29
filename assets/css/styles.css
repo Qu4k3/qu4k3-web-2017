@@ -255,6 +255,121 @@ footer {
   color: #fff;
 }
 
+.table-s-works {
+  color: #fff;
+  width: 100%;
+}
+
+.table-s-works tr {
+  transition: .3s;
+}
+
+.clickable-row, .clickable-row i {
+  transition: .3s;
+}
+
+.table-s-works tr:hover {
+  background: #424242;
+}
+
+.table-s-works tr:hover i {
+  color: #db5945;
+}
+
+.clickable-row:hover {
+  background: #424242;
+  cursor: pointer;
+}
+
+.table-s-works tr td {
+  padding: 15px 15px;
+  border-radius: 0;
+}
+
+.btnNav {
+  font-size:35px;
+  cursor:pointer;
+  position:fixed;
+  top: 50px;
+  left: 0px;
+  color: orange;
+  padding: 8px 15px 10px 15px;
+
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  animation: hue-rotate 5s linear infinite;
+
+  background-color: rgba(17, 17, 17, 0.8);
+  
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  z-index: 8;
+  transition: 0.5s;
+}
+
+.nav-op {
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.videoNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.9);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 0.5s;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.videoNav .wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.videoNav a {
+  margin: 12px 8px;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s
+}
+
+#videoNav::-webkit-scrollbar {
+    width: 12px;
+    background-color: #333;
+}
+
+#videoNav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border-radius: 0px;
+    background-color: #111111;
+}
+
+#videoNav::-webkit-scrollbar-track-piece {
+    background-color: #111111;
+}
+
+#videoNav::-webkit-scrollbar-corner {
+    background-color: #555;
+}
+
+#videoNav::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
 #audio-play-pause {
   position: fixed;
   bottom: 100px;
